@@ -1,0 +1,29 @@
+body {
+    perspective: 500px;
+    background-image: url('conebear.png');
+}
+.button {
+    text-align: center;
+    margin: auto;
+    width: 10%;
+    border: 1px solid black;
+    padding: 15px 32px;
+    border-radius: 10px;
+    transition: .25s;
+}
+.button:hover {
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#spinner {
+    font-size: 100px;
+    text-align: center;
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+  }
+  @keyframes spin {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(-360deg); }
+  }
